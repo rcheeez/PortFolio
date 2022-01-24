@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Archies Gurav - PortFolio</title>
+</head>
+<body>
+<!--Header -->
+    <div class="bg-dark navbar">
+        <h5 class="navbar-brand text-white font-bold ms-4 my-1">Archies Gurav</h5>
+        <button class="btn btn-transparent ms-4 my-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span><img src="./images/menu.svg" alt="Hamburger"></span></button>
+    </div>
+        
+<!-- Navigation -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvasRight ms-4 text-dark font-bold" id="offcanvasRightLabel">Archies Gurav</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a class="nav-link font-bold" href="#">Home </a></li>
+          <li class="list-group-item"><a class="nav-link font-bold" href="#portfolio">PortFolio</a></li>
+          <li class="list-group-item"><a class="nav-link font-bold" href="#" disabled>Blogs</a></li>
+          <li class="list-group-item"><a class="nav-link font-bold" href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal">About Me</a></li>
+          <li class="list-group-item"><a class="nav-link font-bold" href="#staticBackdrop" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact Me</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <!--end of navigation-->
+</div>
+<!--end of header-->
+
+<!--Carousel Banner-->
+<div class="fluid-container">
+    <img  class="border-bottom border-dark" src="./images/portfolio_carousel.svg" alt="Carousel" width="100%">
+</div>
+<!--end of carousel banner-->
+
+
+
+<!-- About Modal Page-->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title font-bold" id="exampleModalLabel">About Me</h5>
+      </div>
+      <div class="modal-body">
+          <div class="card container w-100" style="width: 100%; height: 100%;">
+            <img src="./images/archies_gurav.jpg" class="card-img-top border border-dark" alt="archies_gurav" width="100%">
+            <div class="card-body">
+              <h5 class="card-title text-center font-bold">Archies Gurav</h5>
+              <p class="card-text font-kadwa-regular">Welcome Visitors,I am a Full Stack Software Engineer from Mumbai,Maharashtra. <br> I love taking complex problems and converting them into the beautiful outputs. I also love and enjoy the logic of coding and making algorithms, and always strive to write elegant and efficient code.</p>
+            </div>
+          </div>
+      </div>  
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary font-kadwa-bold" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End of About Modal Page-->
+
+<!--Contact Modal Page-->
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title ms-4 font-bold" id="staticBackdropLabel">Contact Me</h5>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+            <form action="\" method="post">
+                <div class="mb-3">
+                  <input type="text" name="fname" class="form-control font-kadwa-regular" placeholder="First Name" required />
+                </div>
+                <div class="mb-3">
+                  <input type="text" name="lname" class="form-control font-kadwa-regular" placeholder="Last Name" required />
+                </div>
+                <div class="mb-3">
+                  <input type="email" name="emailid" class="form-control font-kadwa-regular"  placeholder="What's your Email?" required/>
+                </div>
+                <div class="mb-3">
+                  <textarea name="message" class="form-control font-kadwa-regular" cols="30" rows="3" placeholder="Enter your Message.." required></textarea>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary font-regular" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary font-regular">Submit</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Contact Modal Page-->
+
+<!--PortFolio Page-->
+<div id="portfolio">
+  <h2 class="font-bold ms-4 mb-4 mt-4">My PortFolio</h2>
+<div class="container-fluid mb-4 mt-4">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card border border-dark">
+        <img src="./images/grocerymania.png" class="card-img-top border-bottom border-dark" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Grocery Mania</h5>
+          <p class="card-text">This is a Online Grocery Selling E-Commerce Website "GroceryMania" with Automatic Bill Generation.<br> Languages Used: HTML,CSS,JAVA, MySQL <br> Link of the project:</p>
+            <a href="https://github.com/rcheeez/GroceryMania" class="font-regular nav-link "><i class="bi bi-github ms-2"><span class="ms-2">Click Here</span>
+            </i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border border-dark">
+        <img src="./images/ems.png" class="card-img-top border-bottom border-dark" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NAAC Management System</h5>
+          <p class="card-text">This is a NAAC Management System website for managing Colleges NAAC data with more automation. <br>Languages Used: HTML,CSS,NODE JS, EXPRESS AND MONGO DB <br> Link of the project:</p>
+          <a href="https://github.com/rcheeez/ems-backend" class="font-regular nav-link "><i class="bi bi-github ms-2"><span class="ms-2">Click Here</span></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--End of PortFolio Page-->
+
+<!--Footer -->
+  <!-- Site footer -->
+  <footer class="site-footer bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="container text-center font-regular">
+        Hello Visitors.<br>I am a Full Stack Software Engineer from Mumbai,Maharashtra. <br> I love taking complex problems and converting them into the beautiful outputs. I also love and enjoy the logic of coding and making algorithms, and always strive to write elegant and efficient code.
+        <hr>
+        </div>
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text font-bold">Designed and Developed by 
+       <a href="./index.html">Archies Gurav</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://github.com/rcheeez"><i class="bi bi-github"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/gurav_archies"><i class="bi bi-twitter"></i></a></li>
+            <li><a class="instagram" href="https://www.instagram.com/archies_gurav/"><i class="bi bi-instagram"></i></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/in/archies-gurav-253865213/"><i class="bi bi-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+<!-- End of Footer-->
+<!--JS Here-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
